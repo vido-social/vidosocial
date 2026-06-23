@@ -6,12 +6,21 @@
   <title>VIDO — Rakennusalan digitaalinen ilme, joka herättää luottamusta</title>
   <meta name="description" content="VIDO rakentaa rakennus- ja talotekniikkayrityksille uskottavat verkkosivut ja jatkuvan sisällöntuotannon ilman raskasta markkinointiprojektia." />
   <meta name="theme-color" content="#050505" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:locale" content="fi_FI" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VIDO — Näytä yhtä hyvältä kuin teet työsi" />
+  <meta name="twitter:description" content="Verkkosivut ja jatkuva sisältö rakennus- ja talotekniikkayrityksille." />
+  <meta name="twitter:image" content="/og-image.png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/site.webmanifest" />
   <meta property="og:title" content="VIDO — Näytä yhtä hyvältä kuin teet työsi" />
   <meta property="og:description" content="Verkkosivut ja jatkuva sisältö rakennus- ja talotekniikkayrityksille." />
   <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
       --bg: #050505;
@@ -42,7 +51,7 @@
         radial-gradient(circle at 50% -10%, rgba(70,105,175,.25), transparent 34rem),
         radial-gradient(circle at 96% 18%, rgba(80,80,120,.12), transparent 27rem),
         var(--bg);
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", sans-serif;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
       overflow-x: hidden;
@@ -470,6 +479,17 @@
     select option { color: #111; }
     .form small { color: var(--muted-2); line-height: 1.5; }
 
+
+    :focus-visible { outline: 2px solid #b9d4ff; outline-offset: 4px; }
+    .skip-link { position: fixed; left: 16px; top: -80px; z-index: 100; padding: 12px 16px; border-radius: 12px; background: #fff; color: #050505; font-weight: 700; transition: top .2s ease; }
+    .skip-link:focus { top: 16px; }
+    .honeypot { position: absolute !important; width: 1px !important; height: 1px !important; overflow: hidden !important; clip: rect(1px, 1px, 1px, 1px) !important; white-space: nowrap !important; }
+    .form-status { min-height: 22px; margin: 0; color: #c9d9f7; font-size: 13px; line-height: 1.5; }
+    .form-status.error { color: #ffb7b7; }
+    .form-status.success { color: var(--success); }
+    .form button[disabled] { opacity: .58; cursor: wait; transform: none; }
+    .privacy-note a { color: #cbdcff; text-decoration: underline; text-underline-offset: 3px; }
+
     footer { padding: 34px 0 110px; }
     .footer-inner { display: flex; justify-content: space-between; gap: 30px; align-items: flex-end; padding-top: 30px; border-top: 1px solid var(--line-soft); }
     .footer-meta { display: grid; gap: 7px; color: var(--muted-2); font-size: 12px; }
@@ -554,8 +574,23 @@
       .reveal { opacity: 1; transform: none; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "VIDO",
+    "description": "Verkkosivut, sisällöntuotanto ja myyntimateriaalit rakennus- ja talotekniikkayrityksille.",
+    "email": "ville.olenius@gmail.com",
+    "areaServed": "Finland",
+    "founder": {
+      "@type": "Person",
+      "name": "Ville Olenius"
+    }
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Siirry sisältöön</a>
   <header class="nav-wrap" aria-label="Päänavigaatio">
     <nav class="nav">
       <a class="brand" href="#top" aria-label="VIDO etusivu">
@@ -572,7 +607,7 @@
     </nav>
   </header>
 
-  <main id="top">
+  <main id="top" tabindex="-1"><span id="main-content" class="honeypot" aria-hidden="true"></span>
     <section class="hero">
       <div class="container">
         <div class="eyebrow reveal">Rakennus- ja talotekniikka-alan sisältötoimisto</div>
@@ -797,14 +832,18 @@
             </div>
           </div>
 
-          <form class="form" id="lead-form">
-            <div class="field"><label for="name">Nimi</label><input id="name" name="name" autocomplete="name" required /></div>
-            <div class="field"><label for="company">Yritys</label><input id="company" name="company" autocomplete="organization" required /></div>
-            <div class="field"><label for="phone">Puhelinnumero</label><input id="phone" name="phone" autocomplete="tel" inputmode="tel" required /></div>
+          <form class="form" id="lead-form" novalidate>
+            <div class="field"><label for="name">Nimi</label><input id="name" name="name" autocomplete="name" minlength="2" maxlength="80" required /></div>
+            <div class="field"><label for="company">Yritys</label><input id="company" name="company" autocomplete="organization" minlength="2" maxlength="100" required /></div>
+            <div class="field"><label for="email">Sähköposti</label><input id="email" name="email" type="email" autocomplete="email" maxlength="160" required /></div>
+            <div class="field"><label for="phone">Puhelinnumero</label><input id="phone" name="phone" autocomplete="tel" inputmode="tel" minlength="5" maxlength="40" required /></div>
             <div class="field"><label for="need">Mitä tarvitsette?</label><select id="need" name="need"><option>Verkkosivusto</option><option>Jatkuva sisällöntuotanto</option><option>Verkkosivusto + sisältö</option><option>En tiedä vielä</option></select></div>
-            <div class="field"><label for="message">Lyhyt kuvaus tilanteesta</label><textarea id="message" name="message" placeholder="Esim. nykyinen sivu on vanha ja referenssit puuttuvat."></textarea></div>
+            <div class="field"><label for="message">Lyhyt kuvaus tilanteesta</label><textarea id="message" name="message" maxlength="2000" placeholder="Esim. nykyinen sivu on vanha ja referenssit puuttuvat."></textarea></div>
+            <div class="honeypot" aria-hidden="true"><label for="website">Verkkosivu</label><input id="website" name="website" tabindex="-1" autocomplete="off" /></div>
+            <input type="hidden" name="startedAt" id="started-at" />
             <button class="btn btn-primary" type="submit">Lähetä kartoituspyyntö <span class="arrow">↗</span></button>
-            <small>Lomake avaa valmiiksi täytetyn sähköpostin. Vaihda sivustolle ennen julkaisua oma lomakeintegraatio tai CRM-webhook.</small>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <small class="privacy-note">Lähettämällä lomakkeen hyväksyt tietojen käsittelyn yhteydenottoon vastaamista varten. <a href="/tietosuoja">Tietosuojaseloste</a>.</small>
           </form>
         </div>
       </div>
@@ -821,7 +860,7 @@
           <span>© <span id="year"></span> VIDO</span>
         </div>
       </div>
-      <div class="footer-links"><a href="mailto:ville.olenius@gmail.com">ville.olenius@gmail.com</a><a href="#top">Takaisin ylös ↑</a></div>
+      <div class="footer-links"><a href="mailto:ville.olenius@gmail.com">ville.olenius@gmail.com</a><a href="/tietosuoja">Tietosuoja</a><a href="#top">Takaisin ylös ↑</a></div>
     </div>
   </footer>
 
@@ -844,20 +883,69 @@
 
     document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-    document.getElementById('lead-form').addEventListener('submit', (event) => {
-      event.preventDefault();
-      const form = new FormData(event.currentTarget);
-      const subject = encodeURIComponent(`VIDO kartoituspyyntö — ${form.get('company')}`);
+    const leadForm = document.getElementById('lead-form');
+    const formStatus = document.getElementById('form-status');
+    const submitButton = leadForm.querySelector('button[type="submit"]');
+    document.getElementById('started-at').value = String(Date.now());
+
+    function openEmailFallback(data) {
+      const subject = encodeURIComponent(`VIDO kartoituspyyntö — ${data.company}`);
       const body = encodeURIComponent(
-`Nimi: ${form.get('name')}
-Yritys: ${form.get('company')}
-Puhelin: ${form.get('phone')}
-Tarve: ${form.get('need')}
+`Nimi: ${data.name}
+Yritys: ${data.company}
+Sähköposti: ${data.email}
+Puhelin: ${data.phone}
+Tarve: ${data.need}
 
 Tilanne:
-${form.get('message') || '-'}`
+${data.message || '-'}`
       );
       window.location.href = `mailto:ville.olenius@gmail.com?subject=${subject}&body=${body}`;
+    }
+
+    leadForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      formStatus.className = 'form-status';
+
+      if (!leadForm.checkValidity()) {
+        leadForm.reportValidity();
+        formStatus.textContent = 'Tarkista pakolliset kentät.';
+        formStatus.classList.add('error');
+        return;
+      }
+
+      const data = Object.fromEntries(new FormData(leadForm).entries());
+      submitButton.disabled = true;
+      formStatus.textContent = 'Lähetetään…';
+
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok) {
+          if (result.code === 'EMAIL_NOT_CONFIGURED') {
+            formStatus.textContent = 'Avataan sähköpostisovellus viestin lähettämistä varten.';
+            openEmailFallback(data);
+            return;
+          }
+          throw new Error(result.message || 'Lähetys epäonnistui');
+        }
+
+        leadForm.reset();
+        document.getElementById('started-at').value = String(Date.now());
+        formStatus.textContent = 'Kiitos. Kartoituspyyntö on lähetetty.';
+        formStatus.classList.add('success');
+      } catch (error) {
+        formStatus.textContent = 'Lomaketta ei voitu lähettää. Avataan sähköpostisovellus.';
+        formStatus.classList.add('error');
+        openEmailFallback(data);
+      } finally {
+        submitButton.disabled = false;
+      }
     });
   </script>
 </body>
