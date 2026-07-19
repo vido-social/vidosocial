@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VIDO — Kotisivut ja markkinointi rakennusalalle</title>
+  <meta name="description" content="Anti-toimisto rakennus- ja talotekniikka-alalle: kotisivut, sisältö ja B2B-uusasiakashankinta ilman markkinointijargonia." />
+  <meta name="theme-color" content="#050505" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:locale" content="fi_FI" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VIDO — Näytä yhtä hyvältä kuin teet työsi" />
+  <meta name="twitter:description" content="Kotisivut ja markkinointi rakennus-, LVI-, sähkö- ja saneerausalan yrityksille." />
+  <meta name="twitter:image" content="/og-image.png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta property="og:title" content="VIDO — Näytä yhtä hyvältä kuin teet työsi" />
+  <meta property="og:description" content="Kotisivut ja markkinointi rakennus-, LVI-, sähkö- ja saneerausalan yrityksille." />
+  <meta property="og:type" content="website" />
+  
+  <!-- CSS: Design tokens and base styles -->
+  <link rel="stylesheet" href="/public/css/variables.css" />
+  <link rel="stylesheet" href="/public/css/layout.css" />
+  <link rel="stylesheet" href="/public/css/components.css" />
+  <link rel="stylesheet" href="/public/css/forms.css" />
+  <link rel="stylesheet" href="/public/css/animations.css" />
+  <link rel="stylesheet" href="/public/css/responsive.css" />
+
+  <!-- Schema markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {"@type":"ProfessionalService","name":"VIDO","description":"Kotisivut, sisällöntuotanto, paikallinen SEO ja B2B-uusasiakashankinta rakennus-, LVI-, sähkö- ja saneerausalan yrityksille.","email":"ville@vidosocial.com","areaServed":"Finland","taxID":"3581471-7","url":"https://vidosocial.com","founder":{"@type":"Person","name":"Ville Olenius"}},
+      {"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Voimmeko hyväksyä sisällöt ennen julkaisua?","acceptedAnswer":{"@type":"Answer","text":"Kyllä. Ensimmäisen kuukauden julkaisut hyväksytään aina ennen julkaisua."}},{"@type":"Question","name":"Sopiiko palvelu LVI- ja sähköliikkeille?","acceptedAnswer":{"@type":"Answer","text":"Kyllä. VIDO on rakennettu LVI-, sähkö-, saneeraus- ja rakennusalan B2B-yrityksille."}}]},
+      {"@type":"BlogPosting","headline":"Näytä yhtä hyvältä kuin teet työsi","description":"Miksi urakoitsijan kotisivun pitää todistaa työn laatu jo ennen yhteydenottoa."}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Siirry sisältöön</a>
+  
+  <header class="nav-wrap" aria-label="Päänavigaatio">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="VIDO etusivu">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>VIDO</span>
+      </a>
+      <div class="nav-links">
+        <a href="/palvelut/">Palvelut</a>
+        <a href="/prosessi/">Miten toimii</a>
+        <a href="/hinnoittelu/">Hinnoittelu</a>
+        <a href="/ukk/">UKK</a>
+      </div>
+      <a class="btn btn-primary btn-small" href="#" data-calendly>Varaa kartoitus <span class="arrow">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top" tabindex="-1"><span id="main-content" class="honeypot" aria-hidden="true"></span>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow reveal">Anti-toimisto rakennus- ja talotekniikka-alalle</div>
+        <h1 class="display gradient-text reveal">Näytä yhtä hyvältä kuin teet työsi – Kotisivut ja markkinointi rakennusalalle</h1>
+        <p class="lead reveal">VIDO on anti-toimisto urakoitsijoille, jotka eivät tarvitse brändityöpajaa vaan lisää luottamusta, tarjouspyyntöjä ja näkyvyyttä. <strong>Me muutamme linjasaneeraukset, jakotukit, keskukset, KVR-urakat ja valmiit kohteet myyntiä tukevaksi digitaaliseksi näytöksi.</strong></p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#" data-calendly>Varaa 15 min kartoitus <span class="arrow">↗</span></a>
+          <a class="btn btn-secondary" href="/palvelut/">Katso mitä saat <span class="arrow">↓</span></a>
+        </div>
+        <p class="hero-note reveal">Selkeä hinta. Nopea aloitus. Ei pitkiä sitoumuksia.</p>
+        <div class="target-links reveal">
+          <a class="btn btn-secondary" href="/kohderyhmat/lvi-ja-putkiliikkeet/">LVI- ja putkiliikkeet</a>
+          <a class="btn btn-secondary" href="/kohderyhmat/sahkoliikkeet/">Sähköliikkeet</a>
+          <a class="btn btn-secondary" href="/kohderyhmat/saneerausliikkeet/">Saneerausliikkeet</a>
+        </div>
+
+        <div class="showcase-wrap reveal" aria-label="Esimerkki VIDO-toteutuksesta">
+          <div class="showcase">
+            <div class="browser-top" aria-hidden="true">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="browser-url"></span>
+            </div>
+            <div class="mock-stage">
+              <div class="mock-copy">
+                <span class="mock-label">LVI-urakoitsija / linjasaneeraus</span>
+                <div class="mock-title">Putkiremontti ilman arvailua.</div>
+                <p>Referenssit, palvelualueet ja yhteydenotto samassa näkymässä — myös työmaalla selaavalle isännöitsijälle.</p>
+                <div class="mock-buttons"><span class="mini-btn">Pyydä tarjous</span><span class="mini-btn ghost">Katso kohteet</span></div>
+              </div>
+
+              <div class="phone" aria-hidden="true">
+                <div class="phone-screen">
+                  <span class="island"></span>
+                  <div class="post-photo">
+                    <div class="post-logo">VIDO / REFERENSSI</div>
+                    <div class="post-headline">Saneeraus valmiiksi aikataulussa.</div>
+                  </div>
+                  <div class="post-content">
+                    <div class="post-meta">Kohde-esittely</div>
+                    <p>Tiivis, uskottava referenssi asiakkaan omista kuvista. Valmiina julkaistavaksi.</p>
+                    <div class="post-tags"><span>#linjasaneeraus</span><span>#jakotukki</span><span>#KVR</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="float-card card-one"><strong>12 julkaisua</strong><span>valmiina joka kuukausi</span></div>
+              <div class="float-card card-two"><strong>1 kk</strong><span>irtisanomisaika</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="trust-row reveal">
+          <div class="trust-item"><strong>499 € / kk</strong><span>Startti</span></div>
+          <div class="trust-item"><strong>12 sisältöä</strong><span>julkaisuvalmiina</span></div>
+          <div class="trust-item"><strong>WhatsAppilla</strong><span>aineistot helposti</span></div>
+          <div class="trust-item"><strong>Luottamustakuu</strong><span>suomalainen yritys · Y-tunnus 3581471-7</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight soft-section">
+      <div class="container">
+        <div class="eyebrow reveal">Luottamus ennen lomaketta</div>
+        <h2 class="reveal">Ei mockuppeja, vaan oikeaa näyttöä.</h2>
+        <p class="lead reveal">Tähän lohkoon sijoitetaan alpha-asiakkaiden aidot logot, livenä olevat verkkotunnukset ja upotetut LinkedIn-julkaisut heti kun julkaisu- ja käyttöluvat ovat koossa.</p>
+        <div class="logo-strip reveal">
+          <div class="logo-card"><b>Alpha-asiakas 01</b><span>live-domain.fi · LinkedIn-upotus</span></div>
+          <div class="logo-card"><b>Alpha-asiakas 02</b><span>live-domain.fi · LinkedIn-upotus</span></div>
+          <div class="logo-card"><b>Alpha-asiakas 03</b><span>live-domain.fi · LinkedIn-upotus</span></div>
+        </div>
+        <div class="guarantee-box reveal"><strong>Luottamustakuu:</strong> VIDO on suomalainen yritys, Y-tunnus 3581471-7. Ensimmäisen kuukauden julkaisut hyväksytään aina ennen julkaisua, jotta ääni, referenssit ja tekniset yksityiskohdat ovat oikein.</div>
+      </div>
+    </section>
+
+    <section class="section" id="palvelu">
+      <div class="container split">
+        <div class="sticky-copy reveal">
+          <div class="eyebrow">Luottamus ratkaisee</div>
+          <h2>Asiakas tarkistaa teidät ennen kuin ottaa yhteyttä.</h2>
+          <p class="lead">Hyvä työn jälki ei auta, jos verkkosivu näyttää vanhalta, referenssit puuttuvat tai sosiaalinen media on tyhjä. VIDO tekee osaamisen näkyväksi tavalla, joka tukee ostopäätöstä.</p>
+        </div>
+        <div class="panel-stack">
+          <article class="panel reveal">
+            <span class="panel-index">01 / Ensivaikutelma</span>
+            <h3>Yritys näyttää uskottavalta heti.</h3>
+            <p>Yhtenäinen ilme, selkeä palvelulupaus ja laadukkaat toteutuskuvat antavat asiakkaalle syyn jatkaa sivulla eikä palata Googleen vertailemaan seuraavaa toimijaa.</p>
+          </article>
+          <article class="panel reveal">
+            <span class="panel-index">02 / Todisteet</span>
+            <h3>Työn jälki muuttuu myyntimateriaaliksi.</h3>
+            <p>Työmaakuvat, valmiit kohteet ja asiakaspalautteet jalostetaan referensseiksi, jotka näyttävät mitä teette, kenelle ja millä laadulla.</p>
+          </article>
+          <article class="panel reveal">
+            <span class="panel-index">03 / Toiminta</span>
+            <h3>Yhteydenotto on helppo tehdä.</h3>
+            <p>Jokainen sisältö ja sivu ohjaa kohti yhtä selkeää seuraavaa askelta: puhelua, WhatsApp-viestiä tai tarjouspyyntöä.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow reveal">Mitä VIDO tuottaa</div>
+        <h2 class="reveal">Yksi kumppani. Yhtenäinen ilme. Vähemmän säätöä.</h2>
+        <p class="lead reveal">Kaikki olennainen rakennetaan samaan järjestelmään, jotta sivusto, some ja myynti puhuvat samaa kieltä.</p>
+
+        <div class="bento">
+          <article class="bento-card large reveal">
+            <h3>Verkkosivusto, joka ohjaa yhteydenottoon.</h3>
+            <p>Nopea, mobiilioptimoitu ja selkeä sivu ilman turhaa täytettä. Palvelut, toimialue, referenssit ja tarjouspyyntö yhdessä uskottavassa kokonaisuudessa.</p>
+            <div class="visual-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="bento-card small reveal">
+            <h3>Jatkuva sisältö.</h3>
+            <p>12 valmista julkaisua kuukaudessa asiakkaan omista kuvista ja työmaan arjesta.</p>
+            <div class="metric"><strong>12</strong><span>julkaisua / kuukausi</span></div>
+          </article>
+          <article class="bento-card half reveal">
+            <h3>Referenssit, jotka todistavat osaamisen.</h3>
+            <p>Ennen–jälkeen-kuvat, kohde-esittelyt, palvelunostot ja asiakaspalautteet valmiiksi myynnilliseen muotoon.</p>
+            <div class="calendar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="bento-card half reveal">
+            <h3>Myyntimateriaalit, jotka voi lähettää heti.</h3>
+            <p>Tarjouspohjat, yhden sivun esitteet ja palvelukuvaukset puhelun, sähköpostin ja WhatsAppin tueksi.</p>
+            <div class="metric"><strong>24/7</strong><span>valmis tukemaan myyntiä</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="prosessi">
+      <div class="container">
+        <div class="eyebrow reveal">Näin yhteistyö toimii</div>
+        <h2 class="reveal">Kevyt asiakkaalle. Hallittu meille.</h2>
+        <div class="process">
+          <article class="step reveal"><h3>15 minuutin kartoitus</h3><p>Käymme läpi palvelut, toimialueen, parhaat asiakastyypit ja sen, mikä nykyisessä näkyvyydessä hidastaa kauppaa.</p></article>
+          <article class="step reveal"><h3>Aineistot WhatsAppilla</h3><p>Lähetätte logon, kuvat ja olennaiset tiedot. Emme tarvitse monen tunnin workshopia tai täydellistä materiaalipankkia.</p></article>
+          <article class="step reveal"><h3>Ensimmäinen toteutus</h3><p>Rakennamme ilmeen, viestit ja materiaalit valmiiksi. Saatte selkeän vedoksen kommentoitavaksi ennen julkaisua.</p></article>
+          <article class="step reveal"><h3>Julkaisu ja jatkuva rytmi</h3><p>Sivusto julkaistaan ja sisällöt tuotetaan sovitussa rytmissä. Jokainen kuukausi rakentaa uskottavampaa digitaalista jalanjälkeä.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hinnoittelu">
+      <div class="container">
+        <div class="eyebrow reveal">Selkeä hinnoittelu</div>
+        <h2 class="reveal">Aloita siitä, mikä poistaa suurimman pullonkaulan.</h2>
+        <p class="lead reveal">Ei raskasta toimistosopimusta. Valitse näkyvyys, verkkosivu tai kokonaisuus.</p>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <span class="badge">Digitaalinen perusta</span>
+            <h3>Startti</h3>
+            <div class="price">499 € <small>/ kk</small></div>
+            <p>Standardoidulla pohjalla rakennettu perusilme yritykselle, jonka nykyinen sivu ei vastaa työn laatua.</p>
+            <ul class="features">
+              <li>Kotisivujen perusrakenne ja jatkuva ylläpito</li>
+              <li>Palvelut, toimialueet ja yhteydenottopolku</li>
+              <li>Perusilmeen yhtenäistys</li>
+              <li>Mobiilioptimointi</li>
+              <li>Ei mainostoimistoteatteria</li>
+            </ul>
+            <a class="btn btn-secondary" href="#" data-calendly>Kysy Startista</a>
+          </article>
+
+          <article class="price-card featured reveal">
+            <span class="badge">Suosituin</span>
+            <h3>Social</h3>
+            <div class="price">799 € <small>/ kk</small></div>
+            <p>Yritykselle, joka haluaa 12 ammattimaista julkaisua kuukaudessa ja jatkuvan paikallisen SEO-hallinnan.</p>
+            <ul class="features">
+              <li>12 ammattimaista julkaisua / kk</li>
+              <li>Tekstit ja visuaalinen toteutus</li>
+              <li>Asiakkaan omista kuvista</li>
+              <li>Google Business Profile -hallinta</li>
+              <li>Ensimmäisen kuukauden julkaisut hyväksytään aina ennen julkaisua</li>
+            </ul>
+            <a class="btn btn-primary" href="#" data-calendly>Aloita VIDO Social</a>
+          </article>
+
+          <article class="price-card reveal">
+            <span class="badge">Kokonaisuus</span>
+            <h3>Growth Engine™</h3>
+            <div class="price">2 490 € <small>aloitus</small><br><small>+ 1 990 € / kk</small></div>
+            <p>Ennustettava ja mitattava B2B-uusasiakashankintajärjestelmä urakoitsijalle, joka haluaa myynnille jatkuvan koneen.</p>
+            <ul class="features">
+              <li>Laajempi verkkosivusto</li>
+              <li>Jatkuva sisällöntuotanto</li>
+              <li>Myyntimateriaalit</li>
+              <li>Laskeutumissivut kampanjoihin</li>
+              <li>CRM-, Make.com- ja WhatsApp Business API -valmius</li>
+            </ul>
+            <a class="btn btn-secondary" href="#" data-calendly>Pyydä ehdotus</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="quote reveal">
+          <p>"Tavoite ei ole näyttää isolta markkinointitoimistolta. Tavoite on näyttää yritykseltä, johon asiakas uskaltaa ottaa yhteyttä."</p>
+          <small>VIDO:n suunnitteluperiaate</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div style="text-align:center" class="reveal">
+          <div class="eyebrow">Usein kysytyt</div>
+          <h2>Suoraan asiaan.</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal"><summary>Mitä tarvitsette meiltä aloitukseen?</summary><p>Logo, palveluiden perustiedot, toimialue, yhteystiedot ja mahdolliset työmaakuvat riittävät. Puuttuvat tekstit rakennamme kartoituksen pohjalta.</p></details>
+          <details class="reveal"><summary>Tarvitaanko kuvauspäivä?</summary><p>Ei välttämättä. Suurin osa sisällöstä voidaan rakentaa yrityksen nykyisistä työmaa- ja referenssikuvista. Tarvittaessa sovitaan erillisestä kuvauksesta.</p></details>
+          <details class="reveal"><summary>Voimmeko hyväksyä sisällöt ennen julkaisua?</summary><p>Kyllä. Materiaalit toimitetaan tarkistettavaksi sovitulla tavalla ennen kuin ne julkaistaan tai otetaan käyttöön.</p></details>
+          <details class="reveal"><summary>Onko VIDO Socialissa pitkä sopimus?</summary><p>Ei. Palvelussa on yhden kuukauden irtisanomisaika.</p></details>
+          <details class="reveal"><summary>Sopiiko palvelu myös sähkö- ja rakennusliikkeille?</summary><p>Kyllä. VIDO on suunniteltu rakennus-, LVI-, sähkö-, saneeraus- ja muiden käytännönläheisten B2B-palveluyritysten tarpeisiin.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="yhteys">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <div class="eyebrow">Maksuton kartoitus</div>
+            <h2>Katsotaan, miltä yrityksenne pitäisi näyttää.</h2>
+            <p class="lead">15 minuutin puhelussa arvioimme nykyisen näkyvyyden, suurimman luottamuspulan ja järkevimmän ensimmäisen toteutuksen.</p>
+            <div class="contact-points">
+              <span>Ei sitoumusta</span>
+              <span>Selkeä ehdotus puhelun jälkeen</span>
+              <span>Aloitus mahdollista nopeasti</span>
+            </div>
+          </div>
+
+          <form class="form" id="lead-form" novalidate>
+            <div class="field"><label for="name">Nimi</label><input id="name" name="name" autocomplete="name" minlength="2" maxlength="80" required /></div>
+            <div class="field"><label for="company">Yritys</label><input id="company" name="company" autocomplete="organization" minlength="2" maxlength="100" required /></div>
+            <div class="field"><label for="email">Sähköposti</label><input id="email" name="email" type="email" autocomplete="email" maxlength="160" required /></div>
+            <div class="field"><label for="phone">Puhelinnumero</label><input id="phone" name="phone" autocomplete="tel" inputmode="tel" minlength="5" maxlength="40" required /></div>
+            <div class="field"><label for="need">Mitä tarvitsette?</label><select id="need" name="need"><option>Verkkosivusto</option><option>Jatkuva sisällöntuotanto</option><option>Verkkosivusto + sisältö</option><option>En tiedä vielä</option></select></div>
+            <div class="field"><label for="message">Lyhyt kuvaus tilanteesta</label><textarea id="message" name="message" maxlength="2000" placeholder="Esim. nykyinen sivu on vanha ja referenssit puuttuvat."></textarea></div>
+            <div class="honeypot" aria-hidden="true"><label for="website">Verkkosivu</label><input id="website" name="website" tabindex="-1" autocomplete="off" /></div>
+            <input type="hidden" name="startedAt" id="started-at" />
+            <button class="btn btn-primary" type="submit">Lähetä kartoituspyyntö <span class="arrow">↗</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <small class="privacy-note">Lähettämällä lomakkeen hyväksyt tietojen käsittelyn yhteydenottoon vastaamista varten. <a href="/tietosuoja">Tietosuojaseloste</a>.</small>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><span>VIDO</span></a>
+        <div class="footer-meta" style="margin-top:16px">
+          <span>Anti-toimisto rakennus- ja talotekniikka-alalle</span>
+          <span>Y-tunnus 3581471-7</span>
+          <span>© <span id="year"></span> VIDO</span>
+        </div>
+      </div>
+      <div class="footer-links"><a href="mailto:ville@vidosocial.com">ville@vidosocial.com</a><a href="/tietosuoja">Tietosuoja</a><a href="#top">Takaisin ylös ↑</a></div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" aria-label="Mobiiliyhteydenotto">
+    <span>Maksuton 15 min kartoitus</span>
+    <a class="btn btn-primary" href="#" data-calendly>Varaa aika</a>
+  </div>
+
+  <a class="btn whatsapp-float" href="https://wa.me/358000000000?text=Hei%20VIDO%2C%20haluan%20aloittaa%20chatin%20WhatsAppissa" aria-label="Aloita chat WhatsAppissa">Aloita chat WhatsAppissa</a>
+  
+  <div class="modal" id="calendar-modal" aria-hidden="true" role="dialog" aria-label="Varaa kartoitus">
+    <div class="modal-card">
+      <div class="modal-head"><h3>Varaa 15 minuutin kartoitus</h3><button class="modal-close" type="button" aria-label="Sulje">×</button></div>
+      <div class="calendar-embed"><div><strong>Kalenteriupotus tähän</strong><p>Lisää Calendly- tai HubSpot-upotuksen URL tuotantoon. CTA avaa tämän modaalin ilman sivun pohjalle skrollaamista.</p><a class="btn btn-primary" href="mailto:ville@vidosocial.com">Varaa sähköpostilla</a></div></div>
+    </div>
+  </div>
+
+  <!-- JavaScript: External app and form handlers -->
+  <script src="/public/js/app.js"></script>
+  <script src="/public/js/form.js"></script>
+</body>
+</html>
